@@ -1,0 +1,4275 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alumno/ontologies/2019/9/Academico"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alumno/ontologies/2019/9/Academico">
+    <Prefix name="" IRI="http://www.semanticweb.org/alumno/ontologies/2019/9/Academico"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Academico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administrativo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AreaDeConcentracion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asesoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coordinador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cubiculo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Departamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Empleado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EspacioFisico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Horario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jefe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlanDeEstudios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profesor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Salon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tronco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UEA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esProfesorDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#perteneceAArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#perteneceATronco"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#profesorTieneHorario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#solicitaAtencion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#solicitaTutoria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tieneProfesorAsignado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneCreditos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEdad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneGenero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneMatricula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreDepto"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreDia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreMateria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombrePersona"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombrePlan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreTronco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNumEco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tronco1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tronco2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tronco3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tronco4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tronco5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#admin1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#admin2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#admin3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#admin4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#adminCajero"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluAlfonso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluAndrea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluCarlos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluClaudia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluDaniela"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluDarinel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluDiego"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluEdgar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluFrancisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluHector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aluVeronica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#area1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#area2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#area3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#area4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#area5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asesoria1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asesoria2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asesoria3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asesoria4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asesoria5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#asesoria6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coor1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coor2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coor3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coor4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#coor5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cub9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depCienciasBasicas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depElectronica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depEnergia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depMateriales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#depSistemas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dia7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#horario9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jf1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jf2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1100041"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1100089"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1100096"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1100103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1100113"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1111081"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1112036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1121043"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1121044"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151018"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151040"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151046"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151048"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151049"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151051"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151054"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151057"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1151058"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat1154001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profAlfredo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profArturo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profBeatriz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profBelem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profEnrique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profGerman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profGueorgi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profHugo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profJose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profLucila"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profMaricela"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profOscar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profSilvia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profVictor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#profZavoznik"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#salon9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#visAdriana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#visEnrique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#visIvonne"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#visMaria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#visVictor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Alumno"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneMatricula"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AreaDeConcentracion"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Departamento"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreDepto"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dia"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreDia"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Empleado"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNumEco"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EspacioFisico"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreEspacio"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Persona"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#tieneCorreoElectronico"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Persona"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneEdad"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Persona"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneGenero"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Persona"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombrePersona"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Tronco"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreTronco"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UEA"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneCreditos"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#UEA"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreMateria"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Visitante"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneID"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Academico"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrativo"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alumno"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AreaDeConcentracion"/>
+        <Class IRI="#PlanDeEstudios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinador"/>
+        <Class IRI="#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cubiculo"/>
+        <Class IRI="#EspacioFisico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Empleado"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jefe"/>
+        <Class IRI="#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profesor"/>
+        <Class IRI="#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Salon"/>
+        <Class IRI="#EspacioFisico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tronco"/>
+        <Class IRI="#PlanDeEstudios"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitante"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tronco"/>
+        <NamedIndividual IRI="#Tronco1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tronco"/>
+        <NamedIndividual IRI="#Tronco2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tronco"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tronco"/>
+        <NamedIndividual IRI="#Tronco4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tronco"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Administrativo"/>
+        <NamedIndividual IRI="#admin1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Administrativo"/>
+        <NamedIndividual IRI="#admin2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Administrativo"/>
+        <NamedIndividual IRI="#admin3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Administrativo"/>
+        <NamedIndividual IRI="#admin4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Administrativo"/>
+        <NamedIndividual IRI="#adminCajero"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluDiego"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluEdgar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluHector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AreaDeConcentracion"/>
+        <NamedIndividual IRI="#area1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AreaDeConcentracion"/>
+        <NamedIndividual IRI="#area2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AreaDeConcentracion"/>
+        <NamedIndividual IRI="#area3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AreaDeConcentracion"/>
+        <NamedIndividual IRI="#area4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AreaDeConcentracion"/>
+        <NamedIndividual IRI="#area5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asesoria"/>
+        <NamedIndividual IRI="#asesoria1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asesoria"/>
+        <NamedIndividual IRI="#asesoria2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asesoria"/>
+        <NamedIndividual IRI="#asesoria3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asesoria"/>
+        <NamedIndividual IRI="#asesoria4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asesoria"/>
+        <NamedIndividual IRI="#asesoria5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asesoria"/>
+        <NamedIndividual IRI="#asesoria6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinador"/>
+        <NamedIndividual IRI="#coor1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinador"/>
+        <NamedIndividual IRI="#coor2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinador"/>
+        <NamedIndividual IRI="#coor3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinador"/>
+        <NamedIndividual IRI="#coor4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Coordinador"/>
+        <NamedIndividual IRI="#coor5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubiculo"/>
+        <NamedIndividual IRI="#cub9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departamento"/>
+        <NamedIndividual IRI="#depCienciasBasicas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departamento"/>
+        <NamedIndividual IRI="#depElectronica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departamento"/>
+        <NamedIndividual IRI="#depEnergia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departamento"/>
+        <NamedIndividual IRI="#depMateriales"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Departamento"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dia"/>
+        <NamedIndividual IRI="#dia7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Horario"/>
+        <NamedIndividual IRI="#horario9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jefe"/>
+        <NamedIndividual IRI="#jf1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jefe"/>
+        <NamedIndividual IRI="#jf2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#mary"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1100041"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1100089"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1100096"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1100103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1100113"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1111081"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1112036"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1121043"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1121044"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151018"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151040"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151046"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151048"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151049"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151051"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1151058"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UEA"/>
+        <NamedIndividual IRI="#mat1154001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profArturo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profBelem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profEnrique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profGerman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profHugo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profJose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profLucila"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profOscar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profSilvia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profVictor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Salon"/>
+        <NamedIndividual IRI="#salon9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitante"/>
+        <NamedIndividual IRI="#visAdriana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitante"/>
+        <NamedIndividual IRI="#visEnrique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitante"/>
+        <NamedIndividual IRI="#visIvonne"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitante"/>
+        <NamedIndividual IRI="#visMaria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Visitante"/>
+        <NamedIndividual IRI="#visVictor"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#mat1100103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#mat1151018"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#mat1151040"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#profOscar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <NamedIndividual IRI="#profSilvia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#mat1100103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#mat1151046"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#mat1151049"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#profBelem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#profGerman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <NamedIndividual IRI="#profSilvia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#mat1100041"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#mat1100096"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#mat1121043"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#mat1151051"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#profBelem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#profJose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#profLucila"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#mat1100089"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#mat1112036"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#mat1151058"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#profBelem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#profHugo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#profVictor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#mat1100113"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#mat1151040"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#mat1151048"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#mat1151058"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#profBelem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#profHugo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <NamedIndividual IRI="#profSilvia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#mat1100041"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#mat1100103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#mat1151051"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#mat1154001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#profEnrique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#profLucila"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <NamedIndividual IRI="#profSilvia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria1"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria1"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria2"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria2"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria2"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria3"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria3"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria4"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria4"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria5"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria5"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria5"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria6"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria6"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <NamedIndividual IRI="#asesoria6"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario1"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario1"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario1"/>
+        <NamedIndividual IRI="#salon1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario1"/>
+        <NamedIndividual IRI="#profLucila"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario1"/>
+        <NamedIndividual IRI="#mat1100041"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario10"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario10"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario10"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario10"/>
+        <NamedIndividual IRI="#salon9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario10"/>
+        <NamedIndividual IRI="#profOscar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario10"/>
+        <NamedIndividual IRI="#mat1151018"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario11"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario11"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario11"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario11"/>
+        <NamedIndividual IRI="#salon10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario11"/>
+        <NamedIndividual IRI="#profArturo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario11"/>
+        <NamedIndividual IRI="#mat1121044"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario12"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario12"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario12"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario12"/>
+        <NamedIndividual IRI="#salon11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario12"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario12"/>
+        <NamedIndividual IRI="#mat1151048"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario13"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario13"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario13"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario13"/>
+        <NamedIndividual IRI="#salon12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario13"/>
+        <NamedIndividual IRI="#profGerman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario13"/>
+        <NamedIndividual IRI="#mat1151049"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario2"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario2"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario2"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario2"/>
+        <NamedIndividual IRI="#salon2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario2"/>
+        <NamedIndividual IRI="#profJose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario2"/>
+        <NamedIndividual IRI="#mat1100096"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario3"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario3"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario3"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario3"/>
+        <NamedIndividual IRI="#salon3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario3"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario3"/>
+        <NamedIndividual IRI="#mat1121043"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario4"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario4"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario4"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario4"/>
+        <NamedIndividual IRI="#salon4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario4"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario4"/>
+        <NamedIndividual IRI="#mat1151051"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario5"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario5"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario5"/>
+        <NamedIndividual IRI="#salon5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario5"/>
+        <NamedIndividual IRI="#profBelem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario5"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario6"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario6"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario6"/>
+        <NamedIndividual IRI="#salon5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario6"/>
+        <NamedIndividual IRI="#profMaricela"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario6"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario7"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario7"/>
+        <NamedIndividual IRI="#salon6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario7"/>
+        <NamedIndividual IRI="#profSilvia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario7"/>
+        <NamedIndividual IRI="#mat1100103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario8"/>
+        <NamedIndividual IRI="#dia1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario8"/>
+        <NamedIndividual IRI="#dia3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario8"/>
+        <NamedIndividual IRI="#dia5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario8"/>
+        <NamedIndividual IRI="#salon7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario8"/>
+        <NamedIndividual IRI="#profEnrique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario8"/>
+        <NamedIndividual IRI="#mat1154001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario9"/>
+        <NamedIndividual IRI="#dia2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <NamedIndividual IRI="#horario9"/>
+        <NamedIndividual IRI="#dia4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <NamedIndividual IRI="#horario9"/>
+        <NamedIndividual IRI="#salon8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <NamedIndividual IRI="#horario9"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <NamedIndividual IRI="#horario9"/>
+        <NamedIndividual IRI="#mat1112036"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1100041"/>
+        <NamedIndividual IRI="#Tronco4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1100096"/>
+        <NamedIndividual IRI="#Tronco4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1100103"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1100113"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1111081"/>
+        <NamedIndividual IRI="#Tronco2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <NamedIndividual IRI="#mat1112036"/>
+        <NamedIndividual IRI="#area4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1112036"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1121043"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <NamedIndividual IRI="#mat1121044"/>
+        <NamedIndividual IRI="#area4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1121044"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151018"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151040"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151046"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151048"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151049"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151051"/>
+        <NamedIndividual IRI="#Tronco3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <NamedIndividual IRI="#mat1151054"/>
+        <NamedIndividual IRI="#area1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151054"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <NamedIndividual IRI="#mat1151057"/>
+        <NamedIndividual IRI="#area1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151057"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <NamedIndividual IRI="#mat1151058"/>
+        <NamedIndividual IRI="#area1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1151058"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <NamedIndividual IRI="#mat1154001"/>
+        <NamedIndividual IRI="#Tronco5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <NamedIndividual IRI="#mat1121043"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <NamedIndividual IRI="#asesoria1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <NamedIndividual IRI="#cub1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <NamedIndividual IRI="#depElectronica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <NamedIndividual IRI="#mat1121044"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <NamedIndividual IRI="#cub11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <NamedIndividual IRI="#depElectronica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <NamedIndividual IRI="#mat1151048"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <NamedIndividual IRI="#cub12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <NamedIndividual IRI="#mat1151054"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <NamedIndividual IRI="#cub5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <NamedIndividual IRI="#mat1154001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <NamedIndividual IRI="#asesoria3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <NamedIndividual IRI="#cub8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <NamedIndividual IRI="#mat1151049"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <NamedIndividual IRI="#asesoria6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <NamedIndividual IRI="#cub13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <NamedIndividual IRI="#mat1151051"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <NamedIndividual IRI="#asesoria2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <NamedIndividual IRI="#cub4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <NamedIndividual IRI="#mat1151058"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profJose"/>
+        <NamedIndividual IRI="#mat1100096"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profJose"/>
+        <NamedIndividual IRI="#cub2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profJose"/>
+        <NamedIndividual IRI="#depCienciasBasicas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <NamedIndividual IRI="#mat1100041"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <NamedIndividual IRI="#cub1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <NamedIndividual IRI="#depElectronica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <NamedIndividual IRI="#mat1151057"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <NamedIndividual IRI="#asesoria5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <NamedIndividual IRI="#cub6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <NamedIndividual IRI="#mat1151018"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <NamedIndividual IRI="#cub10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <NamedIndividual IRI="#mat1100103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <NamedIndividual IRI="#mat1151040"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <NamedIndividual IRI="#cub7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <NamedIndividual IRI="#depSistemas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profVictor"/>
+        <NamedIndividual IRI="#mat1100089"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <NamedIndividual IRI="#mat1112036"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <NamedIndividual IRI="#asesoria4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <NamedIndividual IRI="#cub9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <NamedIndividual IRI="#depCienciasBasicas"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#John"/>
+        <Literal>Juan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <NamedIndividual IRI="#Tronco1"/>
+        <Literal>Nivelacion Academica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <NamedIndividual IRI="#Tronco2"/>
+        <Literal>General</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <NamedIndividual IRI="#Tronco3"/>
+        <Literal>Basico Profesional</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <NamedIndividual IRI="#Tronco4"/>
+        <Literal>Inter y Multidisciplinar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <NamedIndividual IRI="#Tronco5"/>
+        <Literal>Integracion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#admin1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#admin1"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#admin1"/>
+        <Literal>Arturo Arellano Alvarez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#admin1"/>
+        <Literal>39422</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#admin2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#admin2"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#admin2"/>
+        <Literal>Armando Ramirez Cordoba</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#admin2"/>
+        <Literal>39418</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#admin3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#admin3"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#admin3"/>
+        <Literal>Gustavo Bernal Ferrer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#admin3"/>
+        <Literal>29433</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#admin4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#admin4"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#admin4"/>
+        <Literal>Miranda Garcia Esparza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#admin4"/>
+        <Literal>49430</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#adminCajero"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#adminCajero"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#adminCajero"/>
+        <Literal>Carlos Trejo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#adminCajero"/>
+        <Literal>24947</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluAlfonso"/>
+        <Literal>Alfonso Emmanuel Duran Bautista</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <Literal>2143069945</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluAndrea"/>
+        <Literal>Rubi Andrea Alvarez Salcido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+        <Literal>2133000747</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluCarlos"/>
+        <Literal>Carlos Alberto Maqueda Maldonado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <Literal>2162005210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluClaudia"/>
+        <Literal>Claudia Saraí Martínez Castañeda</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">23</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <Literal>2162003467</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluDaniela"/>
+        <Literal>Sharon Daniela Balderas Chavez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+        <Literal>15E30385</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluDarinel"/>
+        <Literal>Darinel Gonzalez Villarreal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluDiego"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluDiego"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluDiego"/>
+        <Literal>2152002752</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluDiego"/>
+        <Literal>Diego Chavez Herrera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluEdgar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluEdgar"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluEdgar"/>
+        <Literal>208305804</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluEdgar"/>
+        <Literal>Edgar González Santos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">28</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+        <Literal>2113033508</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluFrancisco"/>
+        <Literal>Francisco Brizar Hernández</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <Literal>2143033016</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluHector"/>
+        <Literal>Hector Daniel Esparza Mendez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <Literal>2142002893</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#aluVeronica"/>
+        <Literal>Veronica Cruz Aguiñaga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <NamedIndividual IRI="#area1"/>
+        <Literal>Sistemas de Informacion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <NamedIndividual IRI="#area2"/>
+        <Literal>Sistemas Embebidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <NamedIndividual IRI="#area3"/>
+        <Literal>Mecatronica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <NamedIndividual IRI="#area4"/>
+        <Literal>Seguridad y Redes de Computadoras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <NamedIndividual IRI="#area5"/>
+        <Literal>Algoritmos e Inteligencia Artificial</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <NamedIndividual IRI="#asesoria1"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <NamedIndividual IRI="#asesoria1"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <NamedIndividual IRI="#asesoria2"/>
+        <Literal>13:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <NamedIndividual IRI="#asesoria2"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <NamedIndividual IRI="#asesoria3"/>
+        <Literal>14:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <NamedIndividual IRI="#asesoria3"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <NamedIndividual IRI="#asesoria4"/>
+        <Literal>19:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <NamedIndividual IRI="#asesoria4"/>
+        <Literal>18:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <NamedIndividual IRI="#asesoria5"/>
+        <Literal>14:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <NamedIndividual IRI="#asesoria5"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <NamedIndividual IRI="#asesoria6"/>
+        <Literal>16:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <NamedIndividual IRI="#asesoria6"/>
+        <Literal>14:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#coor1"/>
+        <Literal>sgb@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#coor1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#coor1"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#coor1"/>
+        <Literal>Silvia Beatriz Gonzalez Brambila</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#coor1"/>
+        <Literal>36412</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#coor2"/>
+        <Literal>mvp@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#coor2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#coor2"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#coor2"/>
+        <Literal>Maribel Velasco Perez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#coor2"/>
+        <Literal>24914</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#coor3"/>
+        <Literal>lrfs@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#coor3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#coor3"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#coor3"/>
+        <Literal>Luciano Roberto Fernandez Sola</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#coor3"/>
+        <Literal>41421</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#coor4"/>
+        <Literal>gse@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#coor4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#coor4"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#coor4"/>
+        <Literal>Eusebio Guzman Serrano</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#coor4"/>
+        <Literal>27898</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#coor5"/>
+        <Literal>ggma@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#coor5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#coor5"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#coor5"/>
+        <Literal>Maria Antonieta Garcia Galvan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#coor5"/>
+        <Literal>26919</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub1"/>
+        <Literal>G312-2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub10"/>
+        <Literal>H265</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub11"/>
+        <Literal>G301-16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub12"/>
+        <Literal>HP6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub13"/>
+        <Literal>H295</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub2"/>
+        <Literal>H103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub3"/>
+        <Literal>G305-13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub4"/>
+        <Literal>H259</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub5"/>
+        <Literal>HP11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub6"/>
+        <Literal>H287-BIS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub7"/>
+        <Literal>G205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub8"/>
+        <Literal>H286-BIS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#cub9"/>
+        <Literal>H128-A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia1"/>
+        <Literal>Lunes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia2"/>
+        <Literal>Martes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia3"/>
+        <Literal>Miercoles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia4"/>
+        <Literal>Jueves</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia5"/>
+        <Literal>Viernes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia6"/>
+        <Literal>Sabado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <NamedIndividual IRI="#dia7"/>
+        <Literal>Domingo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario1"/>
+        <Literal>16:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario1"/>
+        <Literal>14:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario10"/>
+        <Literal>14:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario10"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario11"/>
+        <Literal>14:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario11"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario12"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario12"/>
+        <Literal>10:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario13"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario13"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario2"/>
+        <Literal>17:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario2"/>
+        <Literal>16:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario3"/>
+        <Literal>10:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario3"/>
+        <Literal>7:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario4"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario4"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario5"/>
+        <Literal>13:45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario5"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario6"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario6"/>
+        <Literal>9:15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario7"/>
+        <Literal>14:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario7"/>
+        <Literal>13:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario8"/>
+        <Literal>11:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario8"/>
+        <Literal>10:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <NamedIndividual IRI="#horario9"/>
+        <Literal>18:15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <NamedIndividual IRI="#horario9"/>
+        <Literal>16:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#jf1"/>
+        <Literal>amg@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#jf1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">41</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#jf1"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#jf1"/>
+        <Literal>Aldama Mejia Genaro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#jf1"/>
+        <Literal>39410</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#mary"/>
+        <Literal>Mary</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1100041"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1100041"/>
+        <Literal>Retos del Desarrollo Nacional</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1100089"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1100089"/>
+        <Literal>Taller de Dibujo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1100096"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1100096"/>
+        <Literal>Taller de Expresión Oral y Escrita</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1100103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1100103"/>
+        <Literal>Seminario de Integracion en Ingenieria en Computacion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1100113"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1100113"/>
+        <Literal>Proyecto de Integracion en Ingenieria en Computacion 1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1111081"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1111081"/>
+        <Literal>Dinamica del Cuerpo Rigido</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1112036"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1112036"/>
+        <Literal>Criptografía</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1121043"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1121043"/>
+        <Literal>Diseño y Administración de Redes de Computadoras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1121044"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1121044"/>
+        <Literal>Seguridad en Redes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151018"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151018"/>
+        <Literal>Sistemas Operativos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151040"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151040"/>
+        <Literal>Análisis y Diseño de Algoritmos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151046"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151046"/>
+        <Literal>Sistemas Distribuidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151048"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151048"/>
+        <Literal>Análisis y Diseño de Sistemas de Información</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151049"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151049"/>
+        <Literal>Compiladores</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151051"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151051"/>
+        <Literal>Gráficas por Computadora</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151054"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151054"/>
+        <Literal>Arquitectura e Integracion de Aplicaciones Empresariales</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151057"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151057"/>
+        <Literal>Programacion Orientada a Servicios</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1151058"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1151058"/>
+        <Literal>Taller de Desarrollo de Aplicaciones Web</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat1154001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat1154001"/>
+        <Literal>Análisis de Decisiones I</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <Literal>jestrada@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <Literal>Jose Alfredo Estrada Soto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profAlfredo"/>
+        <Literal>29423</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <Literal>azl@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">43</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <Literal>Arturo Zuniga Lopez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profArturo"/>
+        <Literal>14918</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <Literal>bgb@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <Literal>Beatriz Adriana González Beltrán</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profBeatriz"/>
+        <Literal>41028</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <Literal>abps@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <Literal>Belem Priego Sanchez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profBelem"/>
+        <Literal>20434</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <Literal>ert@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <Literal>Enrique Rebora Togno</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profEnrique"/>
+        <Literal>29647</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <Literal>tcg@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">47</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <Literal>German Tellez Castillo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profGerman"/>
+        <Literal>38420</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <Literal>xgeorge@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <Literal>Gueorgi Khatchatourov</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profGueorgi"/>
+        <Literal>21026</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <Literal>28408</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <Literal>hpl@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profHugo"/>
+        <Literal>Hugo Pablo Leyva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profJose"/>
+        <Literal>jrle@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profJose"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profJose"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profJose"/>
+        <Literal>Jose Ruben Luevano Enriquez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profJose"/>
+        <Literal>40839</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <Literal>lzv@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <Literal>Lucila Zambrano  Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profLucila"/>
+        <Literal>35862</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <Literal>mcbc@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <Literal>Maricela Claudia Bravo Contreras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profMaricela"/>
+        <Literal>35691</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <Literal>oha@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <Literal>Oscar Herrera Alcantara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profOscar"/>
+        <Literal>25852</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <Literal>sgb@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <Literal>Silvia Beatriz Gonzalez Brambilia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profSilvia"/>
+        <Literal>36412</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profVictor"/>
+        <Literal>vcv@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profVictor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profVictor"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profVictor"/>
+        <Literal>Victor Collantes Vázquez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <Literal>aaz@azc.uam.mx</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <Literal>Alejandro Aguilar Zavoznik</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNumEco"/>
+        <NamedIndividual IRI="#profZavoznik"/>
+        <Literal>41852</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon1"/>
+        <Literal>F303</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon10"/>
+        <Literal>G302</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon11"/>
+        <Literal>E306</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon12"/>
+        <Literal>BYRON</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon13"/>
+        <Literal>F307</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon2"/>
+        <Literal>B004</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon3"/>
+        <Literal>G302-A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon4"/>
+        <Literal>BABBAGE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon5"/>
+        <Literal>G208</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon6"/>
+        <Literal>E309</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon7"/>
+        <Literal>B311</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon8"/>
+        <Literal>K106</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <NamedIndividual IRI="#salon9"/>
+        <Literal>BABBAGE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#visAdriana"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#visAdriana"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneID"/>
+        <NamedIndividual IRI="#visAdriana"/>
+        <Literal>2074006554</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#visAdriana"/>
+        <Literal>Adriana Avila Cortes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#visEnrique"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">24</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#visEnrique"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneID"/>
+        <NamedIndividual IRI="#visEnrique"/>
+        <Literal>2043415219</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#visEnrique"/>
+        <Literal>Enrique Fernandez Arevalo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#visIvonne"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#visIvonne"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneID"/>
+        <NamedIndividual IRI="#visIvonne"/>
+        <Literal>1689735175</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#visIvonne"/>
+        <Literal>Cynthia Ivonne Esparza Méndez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#visMaria"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#visMaria"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneID"/>
+        <NamedIndividual IRI="#visMaria"/>
+        <Literal>3043412264</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#visMaria"/>
+        <Literal>Maria Molina Trejo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#visVictor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#visVictor"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneID"/>
+        <NamedIndividual IRI="#visVictor"/>
+        <Literal>2074006605</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#visVictor"/>
+        <Literal>Victor Castillo Alvarez</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <ObjectProperty IRI="#tieneProfesorAsignado"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <ObjectProperty IRI="#profesorTieneHorario"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <Class IRI="#Asesoria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <Class IRI="#Horario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <Class IRI="#Horario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <Class IRI="#Horario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <Class IRI="#Horario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <Class IRI="#UEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <Class IRI="#UEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#profesorTieneHorario"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#solicitaAtencion"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#solicitaAtencion"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#solicitaTutoria"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tieneProfesorAsignado"/>
+        <Class IRI="#UEA"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#asesoriaTieneDia"/>
+        <Class IRI="#Dia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esProfesorDe"/>
+        <Class IRI="#UEA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <Class IRI="#UEA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#horarioTieneDia"/>
+        <Class IRI="#Dia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#horarioTieneEspacio"/>
+        <Class IRI="#EspacioFisico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#horarioTieneProfesor"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#horarioTieneUEA"/>
+        <Class IRI="#UEA"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#imparteAsesoria"/>
+        <Class IRI="#Asesoria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#perteneceAArea"/>
+        <Class IRI="#AreaDeConcentracion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#perteneceATronco"/>
+        <Class IRI="#Tronco"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#profesorTieneHorario"/>
+        <Class IRI="#Horario"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#solicitaAtencion"/>
+        <Class IRI="#Jefe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#solicitaTutoria"/>
+        <Class IRI="#Coordinador"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneCubiculo"/>
+        <Class IRI="#Cubiculo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneDepartamento"/>
+        <Class IRI="#Departamento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tieneProfesorAsignado"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <Class IRI="#Asesoria"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <Class IRI="#Asesoria"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#horarioTieneHoraFin"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <Class IRI="#Horario"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneCreditos"/>
+        <Class IRI="#UEA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEdad"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneGenero"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneID"/>
+        <Class IRI="#Visitante"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneMatricula"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <Class IRI="#AreaDeConcentracion"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreDepto"/>
+        <Class IRI="#Departamento"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <Class IRI="#Dia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <Class IRI="#EspacioFisico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreEspacio"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#tieneNombreEspacio"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <Class IRI="#UEA"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombrePlan"/>
+        <Class IRI="#PlanDeEstudios"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <Class IRI="#Tronco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNumEco"/>
+        <Class IRI="#Empleado"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#asesoriaTieneHoraFin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#asesoriaTieneHoraInicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horarioTieneHoraFin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horarioTieneHoraInicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneCorreoElectronico"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneCreditos"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEdad"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneGenero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneMatricula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreAreaConcentracion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreDepto"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreDia"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombrePlan"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreTronco"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNumEco"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Alumnos de genero masculino</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Alumno"/>
+                <Variable IRI="#a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneGenero"/>
+                <Variable IRI="#a"/>
+                <Literal>Masculino</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#a"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Profesor"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="#p"/>
+                <Variable IRI="#name"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#name"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
